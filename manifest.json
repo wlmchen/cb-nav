@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "CB-Shortcuts",
+    "version": "1.0",
+    
+    "description": "Keyboard navigation on College Board Assignments",
+
+    "icons": {
+
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://apclassroom.collegeboard.org/*/assessments/assignments/*"],
+            "js": ["cb.js"]
+        }
+    ]
+}
